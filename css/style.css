@@ -40,6 +40,14 @@ h1 {
     font-size: small;
 }
 
+ul li {
+    font-size:xx-large;
+}
+
+ul li a {
+    color:aliceblue;
+}
+
 div.width-limit {
     width: 500px;
     margin: auto;
