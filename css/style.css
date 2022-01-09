@@ -48,9 +48,20 @@ div.width-limit {
   }
 
 div.foot-1 {
-    color: white;
+    color: black;
+    text-align: center;
 }
 
 div.foot-2 {
-    color: yellow;
+    color: rgb(18, 110, 30);
+    text-align: center;
+    font-size: small;
+}
+
+footer {
+    width: 500px;
+    margin: auto;
+    display: grid;
+    background-color: bisque;
+    border-radius: 25px;
 }
