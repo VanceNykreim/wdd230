@@ -13,3 +13,8 @@ h1 {
 .list-end {
     border-top: 1px solid black;
 }
+
+div.width-limit {
+    width: 500px;
+    margin: auto;
+  }
