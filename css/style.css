@@ -53,7 +53,7 @@ div.width-limit {
     margin: auto;
   }
 
-  div.width-limit-2 {
+div.width-limit-2 {
     width: 500px;
     margin: auto;
   }
@@ -61,12 +61,15 @@ div.width-limit {
 div.foot-1 {
     color: black;
     text-align: center;
+    font-weight:bold;
+    font-size: x-large;
 }
 
 div.foot-2 {
     color: rgb(18, 110, 30);
     text-align: center;
-    font-size: small;
+    font-weight:bold;
+    font-size: large;
 }
 
 footer {
