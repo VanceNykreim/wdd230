@@ -19,6 +19,9 @@ div.topper {
 div.topper img {
     margin:auto;
     padding-top: 10px;
+    width: 100px;
+    height: auto;
+    border:0;
 }
 
 div.topper a{
