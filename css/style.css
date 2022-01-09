@@ -11,6 +11,7 @@ div.grid-main {
 }
 div.topper {
     display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(2em, 1fr));
     background-color: bisque;
     grid-gap: 10px;
     border-radius: 25px;
@@ -18,14 +19,15 @@ div.topper {
 
 div.topper img {
     margin:auto;
-    padding-top: 10px;
     width: 100px;
+    padding: 10px;
     height: auto;
     border:0;
 }
 
 div.topper a{
     text-align: center;
+    line-height:150px;
     font-size:x-large;
     font-weight:bold;
     font-family: Georgia, 'Times New Roman', Times, serif;
