@@ -1,1 +1,3 @@
-document.getElementById("modify").innerHTML = document.lastModified;
+window.onload=function update() {
+    document.getElementById("modify").innerHTML = document.lastModified;
+}
