@@ -6,15 +6,51 @@ body {
     color:black;
 }
 
+div.grid-main {
+    display: grid;
+}
+div.topper {
+    display: grid;
+    background-color: bisque;
+    grid-gap: 10px;
+    border-radius: 25px;
+}
+
+div.topper img {
+    margin:auto;
+    padding-top: 10px;
+}
+
+div.topper a{
+    text-align: center;
+    font-size:x-large;
+    font-weight:bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
 h1 {
     border-bottom: 1px solid black;
 }
 
 .list-end {
     border-top: 1px solid black;
+    font-style:italic;
+    font-size: small;
 }
 
 div.width-limit {
     width: 500px;
     margin: auto;
   }
+
+  div.width-limit-2 {
+    width: 500px;
+    margin: auto;
+  }
+
+div.foot-1 {
+    color: white;
+}
+
+div.foot-2 {
+    color: yellow;
+}
