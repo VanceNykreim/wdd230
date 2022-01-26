@@ -1,0 +1,29 @@
+html {
+    background-color: #6f72a7;
+}
+
+body {
+    color:black;
+}
+
+div.foot-1 {
+    color: black;
+    text-align: center;
+    font-weight:bold;
+    font-size: x-large;
+}
+
+div.foot-2 {
+    color: rgb(6, 46, 11);
+    text-align: center;
+    font-weight:bold;
+    font-size: large;
+}
+
+footer {
+    width: 500px;
+    margin: auto;
+    display: grid;
+    background-color: rgb(245, 186, 114);
+    border-radius: 25px;
+}
