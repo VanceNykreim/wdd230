@@ -6,6 +6,22 @@ body {
     color:black;
 }
 
+div.content {
+    background-color: black;
+}
+
+div.visual-hierarchy {
+    background-color:aliceblue;
+}
+
+div.hicks {
+    background-color:aliceblue;
+}
+
+div.fitts {
+    background-color:aliceblue;
+}
+
 div.foot-1 {
     color: black;
     text-align: center;
