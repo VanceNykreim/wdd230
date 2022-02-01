@@ -47,3 +47,15 @@ footer {
     background-color: rgb(245, 186, 114);
     border-radius: 25px;
 }
+
+@media only screen and (min-width: 900px) {
+    body {
+      background-color: rgb(9, 250, 29);
+    }
+  }
+
+@media only screen and (min-width: 1400px) {
+    body {
+      background-color: rgb(230, 59, 29);
+    }
+  }
