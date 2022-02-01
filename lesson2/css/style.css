@@ -1,9 +1,13 @@
+/* Fonts from Google Fonts - more at https://fonts.google.com */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
 html {
     background-color: #6f72a7;
 }
 
 body {
     color:black;
+    font-family: "Open+Sans", sans-serif;
 }
 
 div.content {
