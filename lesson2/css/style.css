@@ -10,8 +10,22 @@ body {
     font-family: "Open+Sans", sans-serif;
 }
 
+img {
+    display: block;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.info_grid {
+    width: 90%;
+    margin: auto;
+}
+
 div.content {
     background-color: black;
+    width: 390px;
+    border-radius: 25px;
 }
 
 div.visual-hierarchy {
@@ -41,21 +55,16 @@ div.foot-2 {
 }
 
 footer {
-    width: 500px;
     margin: auto;
     display: grid;
     background-color: rgb(245, 186, 114);
-    border-radius: 25px;
 }
 
-@media only screen and (min-width: 900px) {
-    main {
-        background-color: aqua;
-    }
+@media only screen and (min-width: 800px) {
 
     div.info_grid {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(auto-fit, minmax(7em, 1fr));
     }
 
     div.visual-hierarchy {
@@ -79,16 +88,12 @@ footer {
     }
   }
 
-@media only screen and (min-width: 1300px) {
+@media only screen and (min-width: 1230px) {
     body {
       background-color: rgb(230, 59, 29);
+      margin:0;
     }
-
-    div.info_grid {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-    }
-
+    
     div.visual-hierarchy {
         grid-column: 1/2;
         grid-row:1;
