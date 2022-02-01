@@ -49,13 +49,59 @@ footer {
 }
 
 @media only screen and (min-width: 900px) {
+    main {
+        background-color: aqua;
+    }
+
+    div.info_grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    div.visual-hierarchy {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    div.hicks {
+        grid-column: 2/3;
+        grid-row: 1/2;
+
+    }
+
+    div.fitts {
+        grid-column: 1/3;
+        grid-row: 2/3;
+    }
+
     body {
       background-color: rgb(9, 250, 29);
     }
   }
 
-@media only screen and (min-width: 1400px) {
+@media only screen and (min-width: 1300px) {
     body {
       background-color: rgb(230, 59, 29);
+    }
+
+    div.info_grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    div.visual-hierarchy {
+        grid-column: 1/2;
+        grid-row:1;
+    }
+
+    div.hicks {
+        grid-column: 2/3;
+        grid-row:1;
+
+    }
+
+    div.fitts {
+        grid-column: 3/4;
+        grid-row:1;
     }
   }
