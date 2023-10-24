@@ -9,7 +9,7 @@
     <meta property="og:type"          content="photo" />
     <meta property="og:title"         content="Eatonville Chamber of Commerce" />
     <meta property="og:image"         content="favicon.ico" />
-    <link rel="stylesheet"            href="styles/normaalize.css">
+    <link rel="stylesheet"            href="styles/normalize.css">
     <link rel="stylesheet"            href="styles/base.css">
     <link rel="stylesheet"            href="styles/medium.css">
     <link rel="stylesheet"            href="styles/large.css">
@@ -19,14 +19,18 @@
 </head>
 <body>
     <header>
-        <h1>This is the header.</h1>
+        <h1>Eatonville Chamber of Commerce</h1>
     </header>
-    <nav>
+
+    <input type="checkbox" id="hamburger">
+    <label for="hamburger" class="icon"></label>
+
+    <nav id="hamnav">
         <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">Discover</a></li>
-            <li><a href="">Directory</a></li>
-            <li><a href="">Join</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Discover</a></li>
+            <li><a href="#">Directory</a></li>
+            <li><a href="#">Join</a></li>
         </ul>
     </nav>
     <main>
@@ -42,7 +46,7 @@
             <h2>Current Events:</h2>
         </section>
         <section id="weather">
-
+            <h2>Weather: </h2>
         </section>
         <section id="spotlight">
             <div id="s_1">
@@ -57,16 +61,23 @@
         </section>
     </main>
     <footer>
-        <div>
-            <p>Chamber of Commerce Logo</p>
-            <p>Address</p>
+        <div id="footerContainer">
+            <div>
+                <p>Chamber of Commerce Logo</p>
+                <p>100 State St. Eatonville, WA 98328</p>
             </div>
-        <div>
-            <p>email:</p>
-            <p>phone number:</p>
-            <a href="https://maps.app.goo.gl/oiEthFHqiBKBL19i7" target="_blank">Location Map:</a>
+            <div>
+                <p>email:
+                <a href="chamber@eatonville.gov" target="_blank">chamber@eatonville.gov</a>
+                </p>
+
+                <p>phone number:
+                    <a href="360-832-1638" target="_blank">360-832-1638</a>
+                </p>
+                <a href="https://maps.app.goo.gl/oiEthFHqiBKBL19i7" target="_blank">Location Map</a>
+            </div>
         </div>
-        <div>
+        <div id="lastUpdated">
             <p>&copy<span id="year"></span> Eatonville Chamber</p>
             <p>Vance Nykreim</p>
             <p>WDD 230 Project</p>
