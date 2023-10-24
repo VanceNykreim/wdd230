@@ -9,9 +9,12 @@
     <meta property="og:type"          content="photo" />
     <meta property="og:title"         content="Eatonville Chamber of Commerce" />
     <meta property="og:image"         content="favicon.ico" />
+    <link rel="stylesheet"            href="styles/normaalize.css">
     <link rel="stylesheet"            href="styles/base.css">
-    <link rel="stylesheet"            href="styles/larger.css">
+    <link rel="stylesheet"            href="styles/medium.css">
+    <link rel="stylesheet"            href="styles/large.css">
     <link rel="icon"                  href="favicon.ico"/>
+    <script src="scripts/chamber.js" defer></script>
     <title>Eatonville Chamber of Commerce</title>
 </head>
 <body>
@@ -20,13 +23,55 @@
     </header>
     <nav>
         <ul>
-            <li>Good stuff</li>
-            <li>Second item</li>
-            <li>ok boss</li>
+            <li><a href="">Home</a></li>
+            <li><a href="">Discover</a></li>
+            <li><a href="">Directory</a></li>
+            <li><a href="">Join</a></li>
         </ul>
     </nav>
+    <main>
+        <section id="hero">
+            <picture>
+                <source srcset="images/hero-rainier-large.webp" media="(min-width:1200px)">
+                <source srcset="images/hero-rainier-medium.webp" media="(min-width:800px)">
+                <img src="images/hero-rainier-small.webp" alt="photo of Mt. Rainier">
+            </picture>
+            <button>Join the Chamber!</button>
+        </section>
+        <section id="current_events">
+            <h2>Current Events:</h2>
+        </section>
+        <section id="weather">
+
+        </section>
+        <section id="spotlight">
+            <div id="s_1">
+
+            </div>
+            <div id="s_2">
+
+            </div>
+            <div id="s_3">
+
+            </div>
+        </section>
+    </main>
     <footer>
-        <h3>This is the footer.</h3>
+        <div>
+            <p>Chamber of Commerce Logo</p>
+            <p>Address</p>
+            </div>
+        <div>
+            <p>email:</p>
+            <p>phone number:</p>
+            <a href="https://maps.app.goo.gl/oiEthFHqiBKBL19i7" target="_blank">Location Map:</a>
+        </div>
+        <div>
+            <p>&copy<span id="year"></span> Eatonville Chamber</p>
+            <p>Vance Nykreim</p>
+            <p>WDD 230 Project</p>
+            <p>Last Modified: <span id="lastmodified"></span></p>
+        </div>
     </footer>
 </body>
 </html>
