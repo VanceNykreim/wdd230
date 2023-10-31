@@ -1,3 +1,11 @@
+:root {
+  --text-color: black;
+  --background-color: #1215b6;
+  --hover-background-color: #252fbc;
+  --hover-color: black;
+}
+
+
 #hero {
     position: relative;
     min-height: 500px;
@@ -133,3 +141,15 @@ nav ul a:hover {
       display: none;
     }
   }
+
+  #home-main section {
+    text-align: center;
+    border: 2px solid rgb(28, 62, 216);
+    box-shadow: 10px 5px 5px var(--hover-background-color);
+    margin: 1rem;
+}
+
+#home-main section p{
+  padding: .5rem;
+}
+  
