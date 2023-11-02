@@ -41,25 +41,30 @@
                 <img src="images/hero-rainier-small.webp" alt="photo of Mt. Rainier">
             </picture>
             <button>Join the Chamber!</button>
+            <label class="switch">
+                <input type="checkbox" id="darkButton" onclick="darkModeFunction()">
+                <span class="slider round"></span>
+              </label>
         </div>
         <section id="current_events">
             <h2>Current Events:</h2>
         </section>
         <section id="weather">
             <h2>Weather: </h2>
+            <a class="weatherwidget-io" href="https://forecast7.com/en/46d87n122d27/eatonville/?unit=us" data-label_1="EATONVILLE" data-label_2="Weather" data-icons="Climacons" data-days="3" data-theme="original" data-highcolor="#e23a3a" >EATONVILLE Weather</a>
         </section>
-        <section id="spotlights">
-            <div id="spotlight-1" class="spotlight-cards">
+        <div id="spotlights">
+            <section id="spotlight-1" class="spotlight-cards">
                 <h3>Spotlight 1</h3>
                 <img src="https://picsum.photos/300/240" alt="spotlight 1 placeholder">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel totam quaerat qui facilis natus illum quam rem deserunt placeat repellendus.</p>
-            </div>
-            <div id="spotlight-2" class="spotlight-cards">
+            </section>
+            <section id="spotlight-2" class="spotlight-cards">
                 <h3>Spotlight 2</h3>
                 <img src="https://picsum.photos/300/240" alt="spotlight 1 placeholder">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel totam quaerat qui facilis natus illum quam rem deserunt placeat repellendus.</p>
-            </div>
-            <div id="spotlight-3" class="spotlight-cards">
+            </section>
+            <section id="spotlight-3" class="spotlight-cards">
                 <h3>Spotlight 3</h3>
                 <img src="https://picsum.photos/300/240" alt="spotlight 1 placeholder">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel totam quaerat qui facilis natus illum quam rem deserunt placeat repellendus.</p>

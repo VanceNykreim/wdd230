@@ -15,3 +15,19 @@ var checkbox = document.getElementById("hamburger");
       // Toggle the active class on the nav element
       nav.classList.toggle("active");
     });
+
+
+//for weather widget
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+
+// for dark mode
+function darkModeFunction(){
+  var darkBox = document.getElementById("darkButton");
+
+  // If the checkbox is checked, change the display
+  if (darkBox.checked == true){
+    //activate darkMode.css file
+  } else {
+    //deactivate darkMode.css file
+  }
+}
