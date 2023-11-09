@@ -1,43 +1,43 @@
 {
     "members":[
         {
-            "name":"Company 1",
-            "address":"123 Main Street, Rexburg, Idaho 83440",
-            "phone":"208-459-2454",
-            "websiteURL":"https://www.rexbrug.org",
-            "imageURL":"images/example.jpg",
+            "name":"Bruno's Family Restaurant & Bar",
+            "address":"204 Center St E, Eatonville, WA 98328",
+            "phone":"360-832-7866",
+            "websiteURL":"https://www.eatbrunos.com/",
+            "imageURL":"./images/brunos_logo.webp",
+            "membershipLevel":"silver"
+        },
+        {
+            "name":"Kirk's Pharmacy",
+            "address":"104 Mashell Ave N, Eatonville, WA 98328",
+            "phone":"360-832-3121",
+            "websiteURL":"https://www.kirkspharmacy.com/",
+            "imageURL":"./images/kirks_logo.webp",
             "membershipLevel":"gold"
         },
         {
-            "name":"Company 2",
+            "name":"Cruiser Cafe",
             "address":"123 Main Street, Rexburg, Idaho 83440",
             "phone":"208-459-2454",
-            "websiteURL":"https://www.rexbrug.org",
-            "imageURL":"images/example.jpg",
-            "membershipLevel":"gold"
+            "websiteURL":"https://www.eatatcruisercafe.com/",
+            "imageURL":"./images/cruiser_cafe_logo.png",
+            "membershipLevel":"bronze"
         },
         {
-            "name":"Company 3",
-            "address":"123 Main Street, Rexburg, Idaho 83440",
-            "phone":"208-459-2454",
-            "websiteURL":"https://www.rexbrug.org",
-            "imageURL":"images/example.jpg",
-            "membershipLevel":"gold"
-        },
-        {
-            "name":"Company 4",
-            "address":"123 Main Street, Rexburg, Idaho 83440",
-            "phone":"208-459-2454",
-            "websiteURL":"https://www.rexbrug.org",
-            "imageURL":"images/example.jpg",
-            "membershipLevel":"gold"
+            "name":"TEA GARDEN",
+            "address":"212 WA-161, Eatonville, WA 98328",
+            "phone":"360-832-6483",
+            "websiteURL":"https://yellowteagarden.com/",
+            "imageURL":"./images/tea_garden_logo.webp",
+            "membershipLevel":"bronze"
         },
         {
             "name":"Company 5",
             "address":"123 Main Street, Rexburg, Idaho 83440",
             "phone":"208-459-2454",
             "websiteURL":"https://www.rexbrug.org",
-            "imageURL":"images/example.jpg",
+            "imageURL":"./images/example.jpg",
             "membershipLevel":"gold"
         },
         {
@@ -45,7 +45,7 @@
             "address":"123 Main Street, Rexburg, Idaho 83440",
             "phone":"208-459-2454",
             "websiteURL":"https://www.rexbrug.org",
-            "imageURL":"images/example.jpg",
+            "imageURL":"./images/example.jpg",
             "membershipLevel":"gold"
         },
         {
@@ -53,7 +53,7 @@
             "address":"123 Main Street, Rexburg, Idaho 83440",
             "phone":"208-459-2454",
             "websiteURL":"https://www.rexbrug.org",
-            "imageURL":"images/example.jpg",
+            "imageURL":"./images/example.jpg",
             "membershipLevel":"gold"
         }
     ]
