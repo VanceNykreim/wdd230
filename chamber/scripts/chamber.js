@@ -31,3 +31,11 @@ function darkModeFunction(){
     //deactivate darkMode.css file
   }
 }
+
+
+let x = document.getElementById("close-greet");
+x.addEventListener('click',()=> 
+{
+  let meetgreet = document.getElementById("meetgreet")
+  let y = y;
+})
