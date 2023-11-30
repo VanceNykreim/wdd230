@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/final.css">
+  <script defer src="script.js"></script>
+  <title>Order Specialty Drink</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <!-- Navigation bar with hamburger menu for smaller resolutions -->
+      <!-- Add navigation links here -->
+      <div class="hamburger-menu">&#9776;</div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="order-form">
+      <h2>Order Your Specialty Drink</h2>
+      <form id="drinkOrderForm">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="fruit1">Select Fruit 1:</label>
+        <select id="fruit1" name="fruit1" required>
+          <!-- Populate options dynamically using JavaScript or manually -->
+        </select>
+
+        <label for="fruit2">Select Fruit 2:</label>
+        <select id="fruit2" name="fruit2" required>
+          <!-- Populate options dynamically using JavaScript or manually -->
+        </select>
+
+        <label for="fruit3">Select Fruit 3:</label>
+        <select id="fruit3" name="fruit3" required>
+          <!-- Populate options dynamically using JavaScript or manually -->
+        </select>
+
+        <label for="specialInstructions">Special Instructions:</label>
+        <textarea id="specialInstructions" name="specialInstructions" rows="4"></textarea>
+
+        <p>Payment is received when the drink is picked up.</p>
+
+        <button type="submit">Submit Order</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <!-- Footer content, including resource/attribution section, social media links, and last modified date -->
+    <section class="attribution">
+      <p>APIs used from <a href="https://www.fruityvice.com/" target="_blank">www.fruityvice.com</a> and <a href="https://openweathermap.org/" target="_blank">openweathermap.org</a></p>
+    </section>
+    <section class="social-media">
+      <!-- Add social media links here -->
+    </section>
+    <section class="last-modified">
+      <!-- Display the last modified date using JavaScript -->
+    </section>
+    <section class="contact-info">
+      <!-- Contact information, including email, phone number, and street address -->
+    </section>
+  </footer>
+</body>
+</html>
