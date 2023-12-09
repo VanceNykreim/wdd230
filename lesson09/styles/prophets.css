@@ -11,5 +11,6 @@
 }
 
 .card img{
+    border: 200px rgba(0,0,0,.1);
     width: 200px;
 }

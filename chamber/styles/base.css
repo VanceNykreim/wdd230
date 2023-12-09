@@ -5,6 +5,10 @@
   --hover-color: black;
 }
 
+image {
+  border: 1px rgba(0,0,0,1);
+  padding: .5rem;
+}
 
 #hero {
     position: relative;

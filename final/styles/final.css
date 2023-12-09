@@ -14,16 +14,12 @@ body {
   }
 
 nav {
-    justify-content: space-between;
     width: 100%;
     background-color: lightblue;
 }
 
 nav ul{
     list-style: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 
 nav ul a {
@@ -34,21 +30,58 @@ nav ul a {
 }
 
 nav ul a:hover {
-  background-color: rgb(64, 52, 236);
+  background-color: rgb(236, 217, 52);
   color: black;
+}
+
+#hamnav {
+  height: 155px;
+  padding:13px 0 13px 20px;
+}
+
+#hamnav > ul, #hamnav > img{
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul, header img {
+  display: inline-block;
+}
+
+li {
+  display: inline-block;
 }
 
 main {
     padding: 20px;
 }
   
-.footer {
-    background-color: #333;
-    color: white;
+footer {
+    background-color: lightblue;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    color: black;
     padding: 10px;
     text-align: center;
 }
 
+footer .site-logo{
+  grid-column: 1/2;
+}
+
+footer .contact-info {
+  grid-column: 2/3;
+}
+
+footer .attribution {
+  grid-column: 3/4;
+}
+
+footer .last-modified {
+  grid-column: 1/4;
+}
 
 /* for hamburger menu */
 @media screen and (max-width: 600px) {
@@ -125,3 +158,19 @@ main {
  #home-main section p{
    padding: .5rem;
  }
+
+ div.quote {
+
+  border: 1px solid;
+
+  width: 300px;
+  
+  margin: 1rem;
+  
+  padding: 1rem;
+  
+  background-color: #bedbed;
+  
+  color: #777777;
+  
+  }
