@@ -5,62 +5,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bountiful Foods</title>
     <link rel="stylesheet"            href="styles/final.css">
+    <link rel="stylesheet"            href="styles/font-awesome/css/font-awesome.min.css">
     <script src="scripts/script.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
 </head>
 <body>
     <header>   
-        <input type="checkbox" id="hamburger">
-        <label for="hamburger" class="icon"></label>
-        <nav id="hamnav">
-          <img src="images/poss_logo.png" class="ice" alt="site logo of fruit">
-          <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Order</a></li>
-              <li><a href="#">About Us</a></li>
-          </ul>
-      </nav>
-    </header>
+      <div class="logo">
+        <img src="images/poss_logo.webp" class="ice" alt="site logo of fruit">
+      </div>
+      
+        <nav class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Order</a>
+            <a href="#">About Us</a>
+        </nav>
+      
+      <div class="burger-menu">&#9776;</div>
+    </header><Sect></Sect>
   
     <main>
-      <!-- Home page content, including images of fruit and produce -->
-      <section class="fruit-images">
-        <!-- Add your fruit images here -->
+      <div class="hero">
+        <picture>
+            <source srcset="images/main-menu-splash-large.webp" media="(min-width:1200px)">
+            <source srcset="images/main-menu-splash-medium.webp" media="(min-width:800px)">
+            <img src="images/main-menu-splash-small.webp" alt="photo of Mt. Rainier">
+        </picture>
+        <a href="order.html" class="order-button">Order Now!</a>
+    </div>
+      <!-- Home page content -->
+      <section class="summary">
+        <p>Discover Carlsbad, California's vibrant coastal charm. Embrace the healthy lifestyle with a refreshing smoothie from local shops, blending wellness and seaside bliss in every sip.</p>
       </section>
 
-      <!-- Call to action to make your own fruit drink mix linking to Order Drink page -->
-      <section class="cta">
-        <p>Create your own fruit drink mix!</p>
-        <a href="order.html">Order Now</a>
-      </section>
-  
+      <div class="tri-card">
+      <!-- Fruit of the week! -->
+        <div class="card">
+          <img src="images/lychee-fruit.webp" alt="lychee fruit">
+          <h3>Fruit of the Week: Lychee</h3>
+          <p>Lychee, a tropical gem, enriches smoothies with its sweet, floral flavor, providing a burst of antioxidants, vitamins, and exotic allure.</p>
+        </div>
+      <!-- Information card about the total number of drinks submitted locally -->
+        <div class="card">
+          <h2>You have ordered this many Smoothies so far:</h2>
+          <p><span></span> placeholder</p>
+        </div>
       <!-- Weather card using OpenWeather API -->
-      <section class="weather-card">
-        <!-- Add elements for displaying weather information -->
-      </section>
-  
-      <!-- Information card about the total number of specialty drinks submitted locally -->
-      <section class="drink-info">
-        <!-- Display the total number of specialty drinks submitted -->
-      </section>
+        <div class="card">
+          <h3>3-Day Weather Forecast in Carlsbad, CA</h3>
+          <section id="weather-forecast"></section>
+        </div>
+      </div>
     </main>
   
+
+
+
+
     <footer>
       <!-- Footer content, including resource/attribution section, social media links, and last modified date -->
-      <section class="site-logo">
-        <img src="images/poss_logo.png" class="ice" alt="site logo of fruit">
+      <section class="social-media">
+        <p>Follow Us!</p>
+        <a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a>
+        <a href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter"></i></a>
+        <a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram"></i></a>
       </section>
+
+
       <section class="contact-info">
-        <!-- Contact information, including email, phone number, and street address, and social media links -->
-        <p>
-          Email Address:<a href="mailto:vanceyadiext@gmail.com">contact@bountifulfoods.org</a>
-        </p>
-        <p>
-          Phone Number:<a href="tel:+12345678901">+1(234)567-8901</a>
-        </p>
-        <p>
-          Street Address: <a href="https://www.google.com/maps/place/Taco+Bell/@33.1607755,-117.3463369,20z/data=!4m15!1m8!3m7!1s0x80dc72109c7af44f:0xa4f5a9e0cd88a6b3!2sTaco+Bell!8m2!3d33.1606862!4d-117.346057!10e1!16s%2Fg%2F1pzq6034j!3m5!1s0x80dc72109c7af44f:0xa4f5a9e0cd88a6b3!8m2!3d33.1606862!4d-117.346057!16s%2Fg%2F1pzq6034j?entry=ttu" target="_blank">745 Carlsbad Village Dr, Carlsbad, CA 92008</a>
-        </p>
+        <!-- Contact information, including email, phone number, and street address -->
+        <p>Email Address:</p>
+        <a href="mailto:vanceyadiext@gmail.com">contact@bountifood.org</a>
+        <p>Phone Number:</p>
+        <a href="tel:+12345678901">+1(234)567-8901</a>
+        <p>Street Address:</p>
+        <a href="https://www.google.com/maps/place/Taco+Bell/@33.1607755,-117.3463369,20z/data=!4m15!1m8!3m7!1s0x80dc72109c7af44f:0xa4f5a9e0cd88a6b3!2sTaco+Bell!8m2!3d33.1606862!4d-117.346057!10e1!16s%2Fg%2F1pzq6034j!3m5!1s0x80dc72109c7af44f:0xa4f5a9e0cd88a6b3!8m2!3d33.1606862!4d-117.346057!16s%2Fg%2F1pzq6034j?entry=ttu" target="_blank">745 Carlsbad Village Dr, Carlsbad, CA 92008</a>
       </section>
+
+
       <section class="attribution">
         <p>APIs used from <a href="https://www.fruityvice.com/" target="_blank">www.fruityvice.com</a> and <a href="https://openweathermap.org/" target="_blank">openweathermap.org</a></p>
       </section>

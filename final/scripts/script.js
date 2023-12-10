@@ -1,12 +1,13 @@
-// for hamburger menu
-var checkbox = document.getElementById("hamburger");
-    var nav = document.getElementById("hamnav");
 
-    // Add an event listener to the checkbox
-    checkbox.addEventListener("change", function() {
-      // Toggle the active class on the nav element
-      nav.classList.toggle("active");
-    });
+// for hamburger menu
+document.addEventListener('DOMContentLoaded', function () {
+  const burgerMenu = document.querySelector('.burger-menu');
+  const navLinks = document.querySelector('.nav-links');
+
+  burgerMenu.addEventListener('click', function () {
+      navLinks.classList.toggle('show');
+  });
+});
 
 // Last modified date in the footer
 const lastModified = document.querySelector('.last-modified');

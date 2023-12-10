@@ -3,9 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bountiful Foods</title>
+    <style>
+        /* Add any styling as needed */
+    </style>
 </head>
 <body>
-    
+    <header>
+        <!-- Your header content here -->
+    </header>
+
+    <div class="hero-container">
+        <img class="hero-image" src="path/to/your-hero-image.jpg" alt="Hero Image">
+        <a href="order.html" class="cta-button">Order Now</a>
+    </div>
+
+    <div class="text-container">
+        <p>This is a sample text block. It can contain up to 25 words or as much content as needed. Customize the text as per your requirements.</p>
+    </div>
+
+    <section id="weather-forecast">
+        <!-- Forecast information will be added here dynamically -->
+    </section>
+
+    <!-- The rest of your page content -->
+
+    <script>
+        // Your JavaScript code here
+        const LAT = 33.158092;
+        const LON = -117.350594;
+        const APIKEY = "fe5a6cbd4b382d87ec49b7bb4fa3ecad";
+        const weatherURL = `https://api.openweathermap.org/data/2.5/forecast?lat=${LAT}&lon=${LON}&appid=${APIKEY}&units=imperial`;
+
+        const ONE_DAY = 24 * 60 * 60 * 1000;
+
+        async function fetchForecast() {
+            try {
+                const response = await fetch(weatherURL);
+                if (response.ok) {
+                    const data = await response.json();
+                    showForecast(data.list);
+                } else {
+                    throw Error(await response.text());
+                }
+            } catch (error) {
+                console.log(error);
+            }
+        }
+
+        function showForecast(forecasts) {
+            let dates = [];
+            let mydate = new Date();
+
+            for (let i = 0; i < 3; i++) {
+                mydate = new Date(mydate.getTime() + ONE_DAY);
+                nextdate = mydate.toISOString().slice(0, 10);
+                dates.push(nextdate);
+            }
+
+            let highTemps = dates.map(date =>
+                forecasts.filter(x => x.dt_txt.startsWith(date)).reduce((prev, next) =>
+                    prev.main.temp > next.main.temp ? prev : next
+                )
+            );
+
+            let lowTemps = dates.map(date =>
+                forecasts.filter(x => x.dt_txt.startsWith(date)).reduce((prev, next) =>
+                    prev.main.temp < next.main.temp ? prev : next
+                )
+            );
+
+            let weatherElt = document.getElementById("weather-forecast");
+
+            for (let i = 0; i < 3; i++) {
+                let newsection = document.createElement("section");
+                newsection.innerHTML = `<h2>${dates[i]}</h2><p>High: ${highTemps[i].main.temp.toFixed(0)}&deg;</p><p>Low: ${lowTemps[i].main.temp.toFixed(0)}&deg;</p>`;
+                weatherElt.append(newsection);
+            }
+        }
+
+        fetchForecast();
+    </script>
 </body>
 </html>

@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    flex: 0 0 auto; /* Fixed size for the logo */
+}
+
+.logo img {
+    width: 160px; /* Adjust the width as needed */
+    height: auto;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    flex: 1; /* Take up remaining space */
+    justify-content: space-around; /* Spread the links across the available space */
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.burger-menu {
+    font-size: 2.5em; /* Increase the font size */
+    cursor: pointer;
+    display: none;
+}
+
+.burger-menu div {
+    margin: 10px 0; /* Add more space between the words */
+    font-size: 2em;
+}
+
+@media screen and (max-width: 600px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .burger-menu {
+        display: block;
+        margin-top: 10px;
+        text-align: center;
+    }
+}
