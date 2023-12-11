@@ -41,18 +41,24 @@
             <input type="tel" id="phone" name="phone" required pattern="[0-9]{10}" title="Enter a valid 10-digit phone number.">
     
             <label for="fruit1">Fruit 1:</label>
-            <select id="fruit1" name="fruit1" class="menus" required></select>
+            <select id="fruit1" name="fruit1" class="menus" required>
+              <option value="" disabled selected>Select a fruit</option>
+            </select>
     
             <label for="fruit2">Fruit 2:</label>
-            <select id="fruit2" name="fruit2" class="menus" required></select>
+            <select id="fruit2" name="fruit2" class="menus" required>
+              <option value="" disabled selected>Select a fruit</option>
+            </select>
     
             <label for="fruit3">Fruit 3:</label>
-            <select id="fruit3" name="fruit3" class="menus" required></select>
+            <select id="fruit3" name="fruit3" class="menus" required>
+              <option value="" disabled selected>Select a fruit</option>
+            </select>
 
             <label for="special">Special Requests?:</label>
             <input type="text" id="special" name="special">
             <button type="submit">Place Order</button>
-            <label for="disclaimer">*Payment will be received upon pickup*</label>
+            <label>*Payment will be received upon pickup*</label>
         </form>
 
       </main>
