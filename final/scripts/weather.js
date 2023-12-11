@@ -16,26 +16,29 @@ function showForecast(forecasts){
         nextdate = mydate.toISOString().slice(0, 10)
         dates.push(nextdate)
     }
-    console.log(dates)
-    // Find the object with the highest temperature for each day
-    highTemps = dates.map((date) => forecasts
-        .filter(x => x.dt_txt.startsWith(date))
-        .reduce((prev, next) => prev.main.temp > next.main.temp ? prev : next)
-    )    
-    // Find the object with the lowest temperature for each day
-    lowTemps = dates.map((date) => forecasts
-        .filter(x => x.dt_txt.startsWith(date))
-        .reduce((prev, next) => prev.main.temp < next.main.temp ? prev : next)        
-    )    
-    console.log(highTemps)
-    console.log(lowTemps)
+
+    // Find the object with the weather condition at 9:00 AM for each day
+    forecastData = dates.map((date) => {
+      const forecastForDay = forecasts.filter(x => x.dt_txt.startsWith(date));
+
+      // Assuming that the forecasts are available at 3-hour intervals
+      const forecastAt9AM = forecastForDay.find(entry => entry.dt_txt.includes('09:00:00'));
+
+      return {
+          date,
+          description: forecastAt9AM.weather[0].description,
+          icon: forecastAt9AM.weather[0].icon
+      };
+  });
+
+
     // Add the forecast information to the HTML document
     let weatherElt = document.getElementById("weather-forecast");
-    for (let i=0; i < 3; i++){
+    forecastData.forEach(data => {
         let newsection = document.createElement("section");
-        newsection.innerHTML = `<h2>${dates[i]}</h2><p>High: ${highTemps[i].main.temp.toFixed(0)}&deg;</p><p>Low: ${lowTemps[i].main.temp.toFixed(0)}&deg;</p>`
-        weatherElt.append(newsection)
-    }    
+        newsection.innerHTML = `<h2>${data.date}</h2><p>${data.description}</p><img src="http://openweathermap.org/img/w/${data.icon}.png" alt="Weather Icon">`;
+        weatherElt.append(newsection);
+    });    
 }
 
 async function fetchForecast() {
