@@ -6,7 +6,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
   let submitCounter = parseInt(localStorage.getItem('submitCounter')) || 0;
 
-  // Display the counter value on the page (optional)
   document.getElementById('submitCounterDisplay').textContent = submitCounter;
 
   burgerMenu.addEventListener('click', function () {

@@ -74,7 +74,6 @@ fetchFruits().then(() => {
     const totalCarbs = calculateTotalCarbs(selectedFruits);
     const totalFat = calculateTotalFat(selectedFruits);
 
-    // Set the values inside the .then block or within a function called from here
     document.querySelector('#totalcalories').textContent = totalCalories.toFixed(0).toString();
     document.querySelector('#totalprotein').textContent = totalProtein.toFixed(0).toString();
     document.querySelector('#totalsugar').textContent = totalSugar.toFixed(0).toString();

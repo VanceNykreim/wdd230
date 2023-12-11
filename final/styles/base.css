@@ -151,13 +151,13 @@ nav a:hover {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center the content horizontally */
+  align-items: center;
   text-align: center;
 }
 
 @media screen and (max-width: 600px) {
   .card {
-      width: 100%; /* Full width for smaller screens */
+      width: 100%;
   }
 }
 

@@ -1,4 +1,3 @@
-// const weatherURL = "./data/3dayweather.json"
 const LAT =  33.158092;
 const LON =  -117.350594;
 const APIKEY = "fe5a6cbd4b382d87ec49b7bb4fa3ecad";
@@ -7,7 +6,6 @@ const weatherURL = `https://api.openweathermap.org/data/2.5/forecast?lat=${LAT}&
 const ONE_DAY = 24 * 60 * 60 * 1000
 
 function showForecast(forecasts){
-    // Get dates for next three days
     console.log(forecasts);
     let dates = []
     let mydate = new Date();
@@ -17,11 +15,9 @@ function showForecast(forecasts){
         dates.push(nextdate)
     }
 
-    // Find the object with the weather condition at 9:00 AM for each day
     forecastData = dates.map((date) => {
       const forecastForDay = forecasts.filter(x => x.dt_txt.startsWith(date));
 
-      // Assuming that the forecasts are available at 3-hour intervals
       const forecastAt9AM = forecastForDay.find(entry => entry.dt_txt.includes('09:00:00'));
 
       return {
@@ -32,7 +28,6 @@ function showForecast(forecasts){
   });
 
 
-    // Add the forecast information to the HTML document
     let weatherElt = document.getElementById("weather-forecast");
     forecastData.forEach(data => {
         let newsection = document.createElement("section");

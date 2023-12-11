@@ -35,15 +35,13 @@ getFruit();
 });
 
 document.addEventListener('DOMContentLoaded', function () {
-  // Retrieve the counter value from local storage
   let submitCounter = parseInt(localStorage.getItem('submitCounter')) || 0;
 
-  // submit event listener
   document.getElementById('smoothieOrderForm').addEventListener('submit', function () {
-      // Increment the counter
+      
       submitCounter++;
 
-      // Store the updated counter value in local storage
+      
       localStorage.setItem('submitCounter', submitCounter);
   });
 });
