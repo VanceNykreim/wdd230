@@ -31,8 +31,5 @@ async function getFruit() {
 getFruit();
 
     document.getElementById('smoothieOrderForm').addEventListener('submit', function(event) {
-    event.preventDefault();
-
-    alert('Order placed successfully!');        
-    window.location.href = 'confirm.html';
+    alert('Order placed successfully!');
 });

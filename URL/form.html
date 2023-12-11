@@ -3,21 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Order Now</title>
-    <link rel="stylesheet"            href="styles/base.css">
-    <link rel="stylesheet"            href="styles/order.css">
+    <title>Bountiful Foods</title>
+    <link rel="stylesheet"            href="../final/styles/base.css">
     <link rel="stylesheet"            href="styles/font-awesome/css/font-awesome.min.css">
     <script src="scripts/script.js" defer></script>
-    <script src="scripts/order.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
 </head>
 <body>
     <header>   
       <div class="logo">
-        <img src="images/poss_logo.webp" class="ice" alt="site logo of fruit">
+        <img src="../final/images/poss_logo.webp" class="ice" alt="site logo of fruit">
       </div>
       
         <nav class="nav-links">
-            <a href="index.html">Home</a>
+            <a href="#">Home</a>
             <a href="order.html">Order</a>
             <a href="about.html">About Us</a>
         </nav>
@@ -25,38 +24,38 @@
       <div class="burger-menu">&#9776;</div>
     </header>
   
-    <main>
-        <form id="smoothieOrderForm" action="confirm.html" method="get">
-            <label id="title-order">Order Here:</label>
-            <label for="firstName">First Name:</label>
-            <input type="text" id="firstName" name="firstName" required pattern="[A-Za-z]+" title="Only letters, please.">
-    
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$">
-    
-            <label for="phone">Phone Number:</label>
-            <input type="tel" id="phone" name="phone" required pattern="[0-9]{10}" title="Enter a valid 10-digit phone number.">
-    
-            <label for="fruit1">Fruit 1:</label>
-            <select id="fruit1" name="fruit1" class="menus" required>
-                <!-- Fruits will be populated dynamically using JavaScript -->
-            </select>
-    
-            <label for="fruit2">Fruit 2:</label>
-            <select id="fruit2" name="fruit2" class="menus" required>
-                <!-- Fruits will be populated dynamically using JavaScript -->
-            </select>
-    
-            <label for="fruit3">Fruit 3:</label>
-            <select id="fruit3" name="fruit3" class="menus" required>
-                <!-- Fruits will be populated dynamically using JavaScript -->
-            </select>
-    
-            <button type="submit">Place Order</button>
-        </form>
 
-      </main>
-  
+
+
+
+
+
+
+    <main>
+        <section>
+            <form action="thankyou.html" method="get">
+                <label>Name: <input name="name" type="text"></label>
+                <label>Favorite Food: <input name="food" type="text"></label>
+                <p>Gender</p>
+                <label>Male <input name="gender" type="radio" value="male"></label>
+                <label>Female <input name="gender" type="radio" value="female"></label>
+                <label><input name="hello" type="submit" value="OK"></label>
+            </form>        
+        </section>
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <footer>
       <!-- Footer content, including resource/attribution section, social media links, and last modified date -->
@@ -70,7 +69,7 @@
 
       <div class="contact-info">
         <!-- Contact information, including email, phone number, and street address -->
-        <p>Email Addresss:</p>
+        <p>Email Address:</p>
         <a href="mailto:vanceyadiext@gmail.com">contact@bountifood.org</a>
         <p>Phone Number:</p>
         <a href="tel:+12345678901">+1(234)567-8901</a>
