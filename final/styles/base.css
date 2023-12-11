@@ -5,9 +5,8 @@
   --hover-color: black;
 }
 
-
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Lato', sans-serif;
     max-width: 1200px;
     min-width: 350px;
     margin: 0 auto;
@@ -109,14 +108,15 @@ nav a:hover {
 }
 
 .order-button {
+  font-family: 'Satisfy', cursive;
   position: absolute;
-  bottom: 65%;
+  bottom: 60%;
   left: 50%;
   transform: translateX(-50%);
-  background-color: #ADCB68;
+  background-color: #B4D949;
   color: white;
   padding: 15px 30px;
-  font-size: 1.5em;
+  font-size: 2em;
   text-decoration: none;
   border: none;
   border-radius: 5px;
@@ -127,6 +127,7 @@ nav a:hover {
 /****************BODY STUFF *********************/
 
 .summary {
+  font-size: 1.5em;
   background-color: lightblue;
   width: 55%;
   margin: 0 auto;
