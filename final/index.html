@@ -8,6 +8,7 @@
     <link rel="stylesheet"            href="styles/font-awesome/css/font-awesome.min.css">
     <script src="scripts/script.js" defer></script>
     <script src="scripts/weather.js" defer></script>
+    <script src="scripts/currweather.js" defer></script>
 </head>
 <body>
     <header>   
@@ -33,23 +34,32 @@
         </picture>
         <a href="order.html" class="order-button">Order Now!</a>
     </div>
-      <!-- Home page content -->
       <div class="summary">
-        <p>Discover Carlsbad, California's vibrant coastal charm. Embrace the healthy lifestyle with a refreshing smoothie from local shops, blending wellness and seaside bliss in every sip.</p>
+        <p>Discover Carlsbad, California's vibrant coastal charm. Embrace the healthy lifestyle with a refreshing smoothie from Bountiful Foods, blending wellness and seaside bliss in every sip.</p>
       </div>
 
       <div class="tri-card">
-      <!-- Fruit of the week! -->
+
+
         <div class="card">
-          <img src="images/lychee-fruit.webp" alt="lychee fruit">
-          <h3>Fruit of the Week: Lychee</h3>
-          <p>Lychee, a tropical gem, enriches smoothies with its sweet, floral flavor, providing a burst of antioxidants, vitamins, and exotic allure.</p>
+          <p>Current weather conditions in Carlsbad, CA:</p>
+          <p>Current Temperature: <span id="current-temp"></span></p>
+        <figure>
+            <img id="weather-icon" src="" alt="">
+            <figcaption></figcaption>
+        </figure>
+          <p>Humidity: <span id="humidity"></span></p>
         </div>
+
+
       <!-- Information card about the total number of drinks submitted locally -->
         <div class="card">
           <h2>You have ordered this many Smoothies so far:</h2>
           <p><span id="submitCounterDisplay"></span></p>
+          <p>That's all?</p>
         </div>
+
+
       <!-- Weather card using OpenWeather API -->
         <div class="card">
           <h3>3-Day Weather Forecast in Carlsbad, CA</h3>
