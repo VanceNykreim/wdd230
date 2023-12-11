@@ -165,6 +165,18 @@ div #submitCounterDisplay {
   font-size: 80px;
 }
 
+a {
+  text-decoration: none;
+}
+
+.confirm-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 20px auto;
+  background-color: lightblue;
+}
+
 
 
 /* FOOTER ******************************/
