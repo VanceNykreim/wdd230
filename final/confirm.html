@@ -26,24 +26,44 @@
     </header>
   
     <main>
-        <h1>Congratulations!</h1>
+        <h1>Thank you for your order!</h1>
         <div id="currentDateTime"></div>
         <h3>Your smoothie will be ready for pickup in at 15 minutes.</h3>
         <h3>Order #<span id="submitCounterDisplay"></span></h3>
 
-        <p>Your name is <span          id="yourname"></span>.</p>
-        <p>Your email address is <span id="youremail"></span>.</p>
-        <p>Your phone number is <span  id="yourphone"></span>.</p>
-        <p>First Fruit: <span          id="fruit1"></span>.</p>
-        <p>Second Fruit: <span         id="fruit2"></span>.</p>
-        <p>Third Fruit: <span          id="fruit3"></span>.</p>
-        <p>Special Requests: <span id="special"></span></p>
-
+        <div class="tri-card">
+        <div class="card">
+          <h2>Order Information:</h2>
+          <p>Name: <span                 id="yourname"></span></p>
+          <p>Email: <span                id="youremail"></span></p>
+          <p>Phone #: <span              id="yourphone"></span></p>
+          <p>First Fruit: <span          id="fruit1"></span></p>
+          <p>Second Fruit: <span         id="fruit2"></span></p>
+          <p>Third Fruit: <span          id="fruit3"></span></p>
+          <p>Special Requests: <span     id="special"></span></p>
+        </div>
+        <div class="card">
+          <h2>Nutritional Information:</h2>
+          <p>Calories: <span      id="totalcalories"></span></p>
+          <p>Protein: <span       id="totalprotein"></span></p>
+          <p>Sugar: <span         id="totalsugar"></span></p>
+          <p>Carbohydrates: <span id="totalcarbs"></span></p>
+          <p>Fat: <span           id="totalfat"></span></p>
+        </div>
+        <div class="card">
+          <h2>Problem/Questions?</h2>
+          <p>Don't hesitate to contact us at any/all of the options listed below:</p>
+          <p>Email Addresss:</p>
+        <a href="mailto:vanceyadiext@gmail.com">contact@bountifood.org</a>
+        <p>Phone Number:</p>
+        <a href="tel:+12345678901">+1(234)567-8901</a>
+        </div>
+      </div>
+        
     </main>
   
 
     <footer>
-      <!-- Footer content, including resource/attribution section, social media links, and last modified date -->
       <div class="social-media">
         <p>Follow Us!</p>
         <a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a>
@@ -53,7 +73,6 @@
 
 
       <div class="contact-info">
-        <!-- Contact information, including email, phone number, and street address -->
         <p>Email Addresss:</p>
         <a href="mailto:vanceyadiext@gmail.com">contact@bountifood.org</a>
         <p>Phone Number:</p>
@@ -66,9 +85,7 @@
       <div class="attribution">
         <p>APIs used from <a href="https://www.fruityvice.com/" target="_blank">www.fruityvice.com</a> and <a href="https://openweathermap.org/" target="_blank">openweathermap.org</a></p>
       </div>
-      <div class="last-modified">
-        <!-- Display the last modified date using JavaScript -->
-      </div>
+      <div class="last-modified"></div>
       
     </footer>
   </body>
