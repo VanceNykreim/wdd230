@@ -31,7 +31,6 @@ async function getFruit() {
 getFruit();
 
     document.getElementById('smoothieOrderForm').addEventListener('submit', function(event) {
-    alert('Order placed successfully!');
 });
 
 document.addEventListener('DOMContentLoaded', function () {
